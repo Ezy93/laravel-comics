@@ -15,12 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $navLinks = config('navlinks');
-    return view('layouts.base', ["navLinks" => $navLinks ]);
+    $shopLinks = config('shopLinks');
+    $topFooterLinks = config('topFooterLinks');
+    return view('layouts.base', ["navLinks" => $navLinks , "shopLinks" => $shopLinks , "topFooterLinks" => $topFooterLinks ]);
 }) -> name('home');
 
 Route::get('/comics', function () {
     $navLinks = config('navlinks');
+    $shopLinks = config('shopLinks');
     $comics = config('comics');
-    return view('guest.comics', ["comics" => $comics , "navLinks" => $navLinks]);
+    return view('guest.comics', ["comics" => $comics , "navLinks" => $navLinks , "shopLinks" => $shopLinks]);
 }) -> name('comics');
 
