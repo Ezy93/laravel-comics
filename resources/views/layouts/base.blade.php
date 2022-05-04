@@ -11,12 +11,12 @@
 
 </head>
 <body>
-    @include('header')
+    @include('guest/header')
 
     <main>
         @yield('main-content')
     </main>
 
-    @include('footer')
+    @include('guest/footer')
 </body>
 </html>
