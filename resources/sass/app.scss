@@ -1,3 +1,41 @@
 //
 @import 'partials/common';
 @import 'partials/variables';
+@import 'bootstrap';
+div.container{
+    div.my-nav-container{
+        padding: 1rem 0rem;
+        
+        nav{
+            display: flex;
+            justify-content: space-between;
+    
+            ul{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                margin: 0;
+    
+                li{
+                    margin: 0rem .9rem;
+                    line-height: 103px;
+    
+                    a{
+                        text-decoration: none;
+                        color: #544F56;
+                    }
+                }
+            }
+        }
+    }
+}
+div.my-jumbotron{
+    height: 20rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
