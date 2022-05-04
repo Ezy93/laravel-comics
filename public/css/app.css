@@ -11282,14 +11282,12 @@ main {
 }
 main div.product-card {
   width: calc(16.6666666667% - 1rem);
-  height: 27vh;
   text-align: start;
-  margin-top: 2rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 main div.product-card div.image-product {
-  height: 90%;
+  height: 55%;
   width: 100%;
 }
 main div.product-card div.image-product img {

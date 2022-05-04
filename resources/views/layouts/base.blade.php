@@ -14,7 +14,7 @@
     @include('guest/header')
 
     <main class="text-white">
-        <div class="container d-flex flex-wrap justify-content-center">
+        <div class="container">
             @yield('main-content')
         </div>
     </main>

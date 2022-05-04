@@ -43,14 +43,13 @@ main{
     background-color: #1c1c1c;
     div.product-card{
         width: calc(100% / 6 - 1rem);
-        height: 27vh;
         text-align: start;
-        margin-top: 2rem;
+
         margin-left: .5rem;
         margin-right: .5rem;
     
         div.image-product{
-            height: 90%;
+            height: 55%;
             width: 100%;
             img{
                 width: 100%;
@@ -59,10 +58,9 @@ main{
                 object-position: top;
             }
         }
+        
     
-        div.comic-title{
-            
-        }
+        
     }
     div.btn{
         a{
