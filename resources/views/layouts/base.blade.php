@@ -13,8 +13,10 @@
 <body>
     @include('guest/header')
 
-    <main>
-        @yield('main-content')
+    <main class="text-white">
+        <div class="container d-flex flex-wrap justify-content-center">
+            @yield('main-content')
+        </div>
     </main>
 
     @include('guest/footer')
