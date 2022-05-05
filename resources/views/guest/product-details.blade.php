@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    {{-- da eliminare lo style in line messo solo per la progettazione del contenuto --}}
+    
     <div class="bg-white my-hr" ></div>
     <div class="container mb-5 pb-5">
         <div class="row">
