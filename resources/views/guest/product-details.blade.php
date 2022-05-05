@@ -5,7 +5,7 @@
 @section('main-content')
 <div class="custom-bg">
     
-    <div class="container">
+    <div class="container ">
         <div class="row py-5">
             <div class="col-9 offset-2 me-5 pe-5 d-flex justify-content-end">
                 <p class="text-uppercase my-0 me-4 my-description">advertisement</p>
@@ -39,7 +39,7 @@
     </div>
     {{-- da eliminare lo style in line messo solo per la progettazione del contenuto --}}
     <div class="bg-white my-hr" ></div>
-    <div class="container">
+    <div class="container mb-5 pb-5">
         <div class="row">
             <div class="col-8 offset-2 d-flex">
                 {{-- talent --}}
@@ -49,7 +49,7 @@
                             <h6 class="my-title-color m-0">Talent</h6>
                         </div>
                     </div>
-                    <div class="row my-hr">
+                    <div class="row my-hr py-1">
                         <div class="col-3 px-0">
                             <p class="m-0 my-title-color">Art by:</p>
                         </div>
@@ -65,7 +65,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row my-hr">
+                    <div class="row my-hr py-1">
                         <div class="col-3 px-0">
                             <p class="m-0 my-title-color">Written by:</p>
                         </div>
@@ -90,7 +90,7 @@
                             <h6 class="my-title-color m-0">Specs</h6>
                         </div>
                     </div>
-                    <div class="row my-hr">
+                    <div class="row my-hr py-1">
                         <div class="col-3 px-0">
                             <p class="m-0 my-title-color">Series:</p>
                             
@@ -101,7 +101,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row my-hr">
+                    <div class="row my-hr py-1">
                         <div class="col-3 px-0">
                             <p class="m-0 my-title-color">U.S. Price:</p>
                         </div>
@@ -111,7 +111,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row my-hr">
+                    <div class="row my-hr py-1">
                         <div class="col-3 px-0">
                             <p class="m-0 my-title-color">On Sale Date:</p>
                         </div>
