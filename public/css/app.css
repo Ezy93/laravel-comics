@@ -38,6 +38,11 @@ p.my-text-primary {
   font-size: 0.8rem;
 }
 
+div.comic-thumb {
+  top: -19rem;
+  left: 15rem;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11319,7 +11324,7 @@ div.my-jumbotron img {
 main {
   background-color: #1c1c1c;
 }
-main div.position-absolute {
+main div.position-absolute.btn-primary {
   bottom: 685px;
 }
 main div.product-card {

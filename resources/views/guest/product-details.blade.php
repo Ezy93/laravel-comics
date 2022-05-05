@@ -5,7 +5,10 @@
 @section('main-content')
 <div class="custom-bg">
     
-    <div class="container ">
+    <div class="container position-relative">
+        <div class="row position-absolute comic-thumb">
+            <img class="px-0" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+        </div>
         <div class="row py-5">
             <div class="col-9 offset-2 me-5 pe-5 d-flex justify-content-end">
                 <p class="text-uppercase my-0 me-4 my-description">advertisement</p>
