@@ -28,7 +28,7 @@
                 </div>
                 
                 {{-- immagine della pubblicità --}}
-                <div class="col-4 pt-2">
+                <div class="col-4 pt-2 ps-1 ms-5">
                     <img class="img-fluid" src="{{asset('images/adv.jpg')}}" alt="">
                 </div>
             </div>
@@ -42,22 +42,26 @@
         <div class="col-8 offset-2 d-flex">
             {{-- talent --}}
             <div class="col-6">
-                <h6 style="border-bottom: 1px solid yellow">Talent</h6>
+                <div class="row">
+                    <div class="col-12" style="border-bottom: 1px solid yellow">
+                        <h6>Talent</h6>
+                    </div>
+                </div>
                 <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3">
+                    <div class="col-3 px-0">
                         <p class="m-0">Art by:</p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 px-0">
                         <p class="m-0">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
                         </p>
                     </div>
                 </div>
                 <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3">
+                    <div class="col-3 px-0">
                         <p class="m-0">Written by:</p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 px-0">
                         <p class="m-0">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
                         </p>
@@ -66,33 +70,37 @@
                 
             </div>
             {{-- specs --}}
-            <div class="col-6">
-                <h6 style="border-bottom: 1px solid yellow">Specs</h6>
+            <div class="col-6 ms-5">
+                <div class="row">
+                    <div class="col-12" style="border-bottom: 1px solid yellow">
+                        <h6>Specs</h6>
+                    </div>
+                </div>
                 <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3">
+                    <div class="col-3 px-0">
                         <p class="m-0">Series:</p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 px-0">
                         <p class="m-0 text-uppercase">
                             action comics
                         </p>
                     </div>
                 </div>
                 <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3">
+                    <div class="col-3 px-0">
                         <p class="m-0">U.S. Price:</p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 px-0">
                         <p class="m-0">
                             $19.99
                         </p>
                     </div>
                 </div>
                 <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3">
+                    <div class="col-3 px-0">
                         <p class="m-0">On Sale Date:</p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 px-0">
                         <p class="m-0">
                             Oct 02 2018
                         </p>
