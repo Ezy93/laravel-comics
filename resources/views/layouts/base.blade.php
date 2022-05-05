@@ -17,6 +17,9 @@
         <div class="container">
             @yield('main-content')
         </div>
+        <div class="container-fluid px-0 bg-primary">
+            @yield('shop-navbar')
+        </div>
     </main>
 
     @include('guest/footer')

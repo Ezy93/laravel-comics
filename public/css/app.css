@@ -11292,7 +11292,7 @@ main div.product-card div.image-product {
 }
 main div.product-card div.image-product img {
   width: 100%;
-  height: 100%;
+  height: 12.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -11301,4 +11301,11 @@ main div.product-card div.image-product img {
 main div.btn a {
   text-decoration: none;
   color: white;
+}
+main div.container-fluid div.col-10 div.col-2 div.me-3 img.shop-link-img, main div.container-sm div.col-10 div.col-2 div.me-3 img.shop-link-img, main div.container-md div.col-10 div.col-2 div.me-3 img.shop-link-img, main div.container-lg div.col-10 div.col-2 div.me-3 img.shop-link-img, main div.container-xl div.col-10 div.col-2 div.me-3 img.shop-link-img, main div.container-xxl div.col-10 div.col-2 div.me-3 img.shop-link-img {
+  width: auto;
+  height: 4rem;
+}
+main div.container-fluid div.col-10 div.col-2 p, main div.container-sm div.col-10 div.col-2 p, main div.container-md div.col-10 div.col-2 p, main div.container-lg div.col-10 div.col-2 p, main div.container-xl div.col-10 div.col-2 p, main div.container-xxl div.col-10 div.col-2 p {
+  font-size: 0.8rem;
 }
