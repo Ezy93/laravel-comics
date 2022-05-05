@@ -7,7 +7,13 @@
     
     <div class="container position-relative">
         <div class="row position-absolute comic-thumb">
+            <div class="position-absolute bg-primary w-50">
+                <p class="m-0 text-uppercase py-1">{{$comic['type']}}</p>
+            </div>
             <img class="px-0" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+            <div class="position-absolute bg-primary my-bottom">
+                <p class="m-0 text-uppercase py-1">view gallery</p>
+            </div>
         </div>
         <div class="row py-5">
             <div class="col-9 offset-2 me-5 pe-5 d-flex justify-content-end">
