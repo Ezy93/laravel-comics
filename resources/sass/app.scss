@@ -43,6 +43,9 @@ div.my-jumbotron{
 
 main{
     background-color: #1c1c1c;
+    div.position-absolute{
+        bottom: 685px;
+    }
     div.product-card{
         width: calc(100% / 6 - 1rem);
         text-align: start;

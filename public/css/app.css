@@ -11280,6 +11280,9 @@ div.my-jumbotron img {
 main {
   background-color: #1c1c1c;
 }
+main div.position-absolute {
+  bottom: 685px;
+}
 main div.product-card {
   width: calc(16.6666666667% - 1rem);
   text-align: start;
