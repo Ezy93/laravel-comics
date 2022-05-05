@@ -24,6 +24,7 @@ Route::get('/comics', function () {
     $navLinks = config('navlinks');
     $shopLinks = config('shopLinks');
     $comics = config('comics');
-    return view('guest.comics', ["comics" => $comics , "navLinks" => $navLinks , "shopLinks" => $shopLinks]);
+    $topFooterLinks = config('topFooterLinks');
+    return view('guest.comics', ["comics" => $comics , "navLinks" => $navLinks , "shopLinks" => $shopLinks , "topFooterLinks" => $topFooterLinks]);
 }) -> name('comics');
 

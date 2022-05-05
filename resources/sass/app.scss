@@ -39,6 +39,8 @@ div.my-jumbotron{
 
     }
 }
+
+
 main{
     background-color: #1c1c1c;
     div.product-card{
@@ -82,6 +84,90 @@ main{
                 }
             }
         }
+    }
+}
+
+footer{
+    div.top-footer{
+        background-image: url("../../public/images/footer-bg.jpg");
+            div.container{
+                display: flex;
+                justify-content: space-between;
+
+                div.nav-footer{
+                    width: 40%;
+                    text-align: start;
+                    display: flex
+                }
+
+                div.logo-dc{
+                    background-image: url("../../public/images/dc-logo-bg.png");
+                    background-position: center;
+                    background-size: cover;
+                    width: 45%;
+                    
+                }
+            }
+    };
+
+    div.bot-footer{
+        background-color: #303030;
+        ul.footer-img-links{
+            li{
+                margin: 0rem .5rem;
+            }
+        }
+        div.bottom-f{
+            display: flex;
+            justify-content: space-between;
+                div.bot-footer-links{
+                    display: flex;
+                    align-items: center;
+                    ul.footer-img-links{
+                        display: flex;
+                    }
+                }
+        }
+    }
+    div.ul-vertical{
+        display: flex;
+        flex-direction: column;
+    }
+    div.ul-horizontal{
+        display: flex;
+    }
+    ul{
+        list-style-type: none;
+        padding: 1rem;
+        li{
+            padding-bottom: .3rem;
+            a{
+                color: #576a79;
+                text-decoration: none;
+                font-size: .7rem;
+            }
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    h3{
+        text-transform: uppercase;
+        color: $brandColor;
+    }
+
+    button{
+        margin: 1.35rem 0rem ;
+        padding: .9rem;
+        background-color: transparent;
+        border: 2px solid $brandColor;
+            a{
+                text-transform: uppercase;
+                color: white;
+                text-decoration: none;
+            }
     }
 }
 
