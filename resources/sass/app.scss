@@ -1,6 +1,7 @@
 //
 @import 'partials/common';
 @import 'partials/variables';
+@import 'partials/details';
 @import 'bootstrap';
 div.container{
     div.my-nav-container{
@@ -52,7 +53,9 @@ main{
 
         margin-left: .5rem;
         margin-right: .5rem;
-        
+        a{
+            text-decoration: none;
+        }
         div.image-product{
             height: 55%;
             width: 100%;

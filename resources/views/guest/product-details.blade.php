@@ -3,107 +3,123 @@
 @section('title', 'comic-details')
 
 @section('main-content')
-<div class="container">
-    <div class="row py-5">
-        <div class="col-8 offset-2 d-flex justify-content-end">
-            <p class="text-uppercase m-0">advertisement</p>
-        </div>
-        <div class="col-8 offset-2">
-            {{-- descrizione del comic con prezzo --}}
-            <div class="d-flex">
-                <div class="col-8 pb-2">
-                    <h4 class="text-uppercase m-0">action comics #1000: the deluxe edition</h4>
-                    <div class="d-flex">
-                        <div class="w-75 d-flex justify-content-between">
-                            <p class="m-0">U.S.Price: <span>$19.99</span></p>
-                            <p class="m-0 text-uppercase">available</p>
+<div class="custom-bg">
+    
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-9 offset-2 me-5 pe-5 d-flex justify-content-end">
+                <p class="text-uppercase my-0 me-4 my-description">advertisement</p>
+            </div>
+            <div class="col-8 offset-2">
+                {{-- descrizione del comic con prezzo --}}
+                <div class="d-flex">
+                    <div class="col-8 pb-2">
+                        <h4 class="text-uppercase m-0 my-title-color pb-3">{{$comic['title']}}</h4>
+                        <div class="d-flex my-border-bottom">
+                            <div class="w-75 py-1 px-3 d-flex justify-content-between my-bg-table">
+                                <p class="m-0"> <span>U.S.Price:</span>{{$comic['price']}}</p>
+                                <p class="m-0 text-uppercase"><span>available</span></p>
+                            </div>
+                            <div class="w-25 py-1 px-2 my-bg-table">
+                                <p class="m-0">Check Availability</p>
+                            </div>
                         </div>
-                        <div class="w-25">
-                            <p class="m-0">Check Availability</p>
+                        <div>
+                            <p class="pt-3 my-description">{{$comic['description']}}</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est magnam tempore cupiditate et laborum fuga itaque. Natus, officia eaque, tempore impedit tempora hic quaerat ratione illo, saepe voluptatem rem? Repellat!</p>
+                    
+                    {{-- immagine della pubblicità --}}
+                    <div class="col-4 pt-2 ps-1 ms-5">
+                        <img class="img-fluid" src="{{asset('images/adv.jpg')}}" alt="">
                     </div>
-                </div>
-                
-                {{-- immagine della pubblicità --}}
-                <div class="col-4 pt-2 ps-1 ms-5">
-                    <img class="img-fluid" src="{{asset('images/adv.jpg')}}" alt="">
                 </div>
             </div>
         </div>
     </div>
-</div>
-{{-- da eliminare lo style in line messo solo per la progettazione del contenuto --}}
-<div class="bg-white" style="border-bottom: 4px solid yellow"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-8 offset-2 d-flex">
-            {{-- talent --}}
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12" style="border-bottom: 1px solid yellow">
-                        <h6>Talent</h6>
+    {{-- da eliminare lo style in line messo solo per la progettazione del contenuto --}}
+    <div class="bg-white my-hr" ></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 d-flex">
+                {{-- talent --}}
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 px-0 my-hr py-3">
+                            <h6 class="my-title-color m-0">Talent</h6>
+                        </div>
                     </div>
+                    <div class="row my-hr">
+                        <div class="col-3 px-0">
+                            <p class="m-0 my-title-color">Art by:</p>
+                        </div>
+                        <div class="col-9 px-0">
+                            <p class="m-0 my-text-primary">
+                                @foreach ($comic['artists'] as $artist)
+                                @if (count($comic['artists']) == 1)
+                                {{$artist.'.'}}
+                            @else
+                                {{$artist.','.' '}}
+                            @endif
+                                @endforeach
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row my-hr">
+                        <div class="col-3 px-0">
+                            <p class="m-0 my-title-color">Written by:</p>
+                        </div>
+                        <div class="col-9 px-0">
+                            <p class="m-0 my-text-primary">
+                                @foreach ($comic['writers'] as $writer)
+                                    @if (count($comic['writers']) == 1)
+                                        {{$writer.'.'}}
+                                    @else
+                                        {{$writer.','.' '}}
+                                    @endif
+                                @endforeach
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3 px-0">
-                        <p class="m-0">Art by:</p>
+                {{-- specs --}}
+                <div class="col-6 ms-5">
+                    <div class="row">
+                        <div class="col-12 px-0 my-hr py-3">
+                            <h6 class="my-title-color m-0">Specs</h6>
+                        </div>
                     </div>
-                    <div class="col-9 px-0">
-                        <p class="m-0">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
-                        </p>
+                    <div class="row my-hr">
+                        <div class="col-3 px-0">
+                            <p class="m-0 my-title-color">Series:</p>
+                            
+                        </div>
+                        <div class="col-9 px-0">
+                            <p class="m-0 text-uppercase my-text-primary">
+                                {{$comic['series']}}
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3 px-0">
-                        <p class="m-0">Written by:</p>
+                    <div class="row my-hr">
+                        <div class="col-3 px-0">
+                            <p class="m-0 my-title-color">U.S. Price:</p>
+                        </div>
+                        <div class="col-9 px-0">
+                            <p class="m-0 my-title-color">
+                                {{$comic['price']}}
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-9 px-0">
-                        <p class="m-0">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-            {{-- specs --}}
-            <div class="col-6 ms-5">
-                <div class="row">
-                    <div class="col-12" style="border-bottom: 1px solid yellow">
-                        <h6>Specs</h6>
-                    </div>
-                </div>
-                <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3 px-0">
-                        <p class="m-0">Series:</p>
-                    </div>
-                    <div class="col-9 px-0">
-                        <p class="m-0 text-uppercase">
-                            action comics
-                        </p>
-                    </div>
-                </div>
-                <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3 px-0">
-                        <p class="m-0">U.S. Price:</p>
-                    </div>
-                    <div class="col-9 px-0">
-                        <p class="m-0">
-                            $19.99
-                        </p>
-                    </div>
-                </div>
-                <div class="row" style="border-bottom: 1px solid yellow">
-                    <div class="col-3 px-0">
-                        <p class="m-0">On Sale Date:</p>
-                    </div>
-                    <div class="col-9 px-0">
-                        <p class="m-0">
-                            Oct 02 2018
-                        </p>
+                    <div class="row my-hr">
+                        <div class="col-3 px-0">
+                            <p class="m-0 my-title-color">On Sale Date:</p>
+                        </div>
+                        <div class="col-9 px-0">
+                            <p class="m-0 my-title-color">
+                                {{$comic['sale_date']}}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,11 +28,15 @@ Route::get('/comics', function () {
     return view('guest.comics', ["comics" => $comics , "navLinks" => $navLinks , "shopLinks" => $shopLinks , "topFooterLinks" => $topFooterLinks]);
 }) -> name('comics');
 
-Route::get('/comic-details', function () {
+Route::get('/comic-details/{id}', function ($id) {
     $navLinks = config('navlinks');
     $shopLinks = config('shopLinks');
     $comics = config('comics');
     $topFooterLinks = config('topFooterLinks');
-    return view('guest.product-details', ["comics" => $comics , "navLinks" => $navLinks , "shopLinks" => $shopLinks , "topFooterLinks" => $topFooterLinks]);
+    if(is_numeric($id) && $id >= 0 && $id < count($comics)){
+        return view('guest.product-details', ["comic" => $comics[$id] , "navLinks" => $navLinks , "shopLinks" => $shopLinks , "topFooterLinks" => $topFooterLinks]);
+    }else{
+        abort(404); 
+    }
 }) -> name('details');
 

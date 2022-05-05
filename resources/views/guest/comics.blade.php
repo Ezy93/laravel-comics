@@ -9,13 +9,15 @@
             <h2 class="text-uppercase m-0">current series</h2>
         </div>
         <div class="col-12 d-flex flex-wrap mt-5 align-items-baseline">
-            @foreach ($comics as $comic) 
+            @foreach ($comics as $index => $comic) 
                     <div class="product-card">
-                        <div class="image-product">
-                            <img  src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                        </div>
-                        
-                        <h6 class="mt-3 mb-5">{{$comic['series']}}</h6>
+                        <a href="{{route("details",['id' => $index])}}" class="text-white">
+                            <div class="image-product">
+                                <img  src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                            </div>
+                            
+                            <h6 class="mt-3 mb-5">{{$comic['series']}}</h6>
+                        </a>
                         
                     </div>
             @endforeach

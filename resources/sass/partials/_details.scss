@@ -1,0 +1,36 @@
+div.custom-bg{
+    background-color: white;
+}
+
+.my-title-color{
+    color: $detail_title;
+}
+
+.my-description{
+    color: #8e797c;
+}
+
+div.my-bg-table{
+    background-color: #55ba59;
+    
+    p{
+        span{
+            color: #99dc5f;
+        }
+    }
+}
+div.w-25{
+    border-left: 1px solid #4b864f;
+}
+
+.my-border-bottom{
+    border-bottom: 1px solid #4b864f;
+}
+
+.my-hr{
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.my-text-primary{
+    color: $brandColor
+}
