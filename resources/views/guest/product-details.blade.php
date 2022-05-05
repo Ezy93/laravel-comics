@@ -3,6 +3,7 @@
 @section('title', 'comic-details')
 
 @section('main-content')
+<div class="container">
     <div class="row py-5">
         <div class="col-8 offset-2 d-flex justify-content-end">
             <p class="text-uppercase m-0">advertisement</p>
@@ -33,4 +34,72 @@
             </div>
         </div>
     </div>
+</div>
+{{-- da eliminare lo style in line messo solo per la progettazione del contenuto --}}
+<div class="bg-white" style="border-bottom: 4px solid yellow"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 d-flex">
+            {{-- talent --}}
+            <div class="col-6">
+                <h6 style="border-bottom: 1px solid yellow">Talent</h6>
+                <div class="row" style="border-bottom: 1px solid yellow">
+                    <div class="col-3">
+                        <p class="m-0">Art by:</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="m-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid yellow">
+                    <div class="col-3">
+                        <p class="m-0">Written by:</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="m-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus laborum dignissimos assumenda porro ea doloremque deleniti culpa soluta magni libero recusandae autem animi excepturi, amet molestias quibusdam labore similique fugiat.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            {{-- specs --}}
+            <div class="col-6">
+                <h6 style="border-bottom: 1px solid yellow">Specs</h6>
+                <div class="row" style="border-bottom: 1px solid yellow">
+                    <div class="col-3">
+                        <p class="m-0">Series:</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="m-0 text-uppercase">
+                            action comics
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid yellow">
+                    <div class="col-3">
+                        <p class="m-0">U.S. Price:</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="m-0">
+                            $19.99
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid yellow">
+                    <div class="col-3">
+                        <p class="m-0">On Sale Date:</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="m-0">
+                            Oct 02 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

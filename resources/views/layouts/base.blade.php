@@ -14,7 +14,7 @@
     @include('guest/header')
 
     <main class="text-white">
-        <div class="container">
+        <div>
             @yield('main-content')
         </div>
         <div class="container-fluid px-0 bg-primary">
