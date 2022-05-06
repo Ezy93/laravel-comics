@@ -11369,7 +11369,7 @@ main div.container-fluid div.col-10 div.col-2 p, main div.container-sm div.col-1
 }
 
 footer div.top-footer {
-  background-image: url("../../public/images/footer-bg.jpg");
+  background-image: url("/images/footer-bg.jpg");
 }
 footer div.top-footer div.container {
   display: flex;
@@ -11381,7 +11381,7 @@ footer div.top-footer div.container div.nav-footer {
   display: flex;
 }
 footer div.top-footer div.container div.logo-dc {
-  background-image: url("../../public/images/dc-logo-bg.png");
+  background-image: url("/images/dc-logo-bg.png");
   background-position: center;
   background-size: cover;
   width: 45%;
